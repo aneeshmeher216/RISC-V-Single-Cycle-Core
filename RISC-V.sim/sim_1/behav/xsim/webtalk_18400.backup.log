@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Mar  9 22:12:57 2025
+# Process ID: 18400
+# Current directory: E:/Electronics/Vivado/RISC-V Sincgle Cycle Core/RISC-V Sincgle Cycle Core.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/Electronics/Vivado/RISC-V Sincgle Cycle Core/RISC-V Sincgle Cycle Core.sim/sim_1/behav/xsim/xsim.dir/Single_Cycle_Processor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/Electronics/Vivado/RISC-V Sincgle Cycle Core/RISC-V Sincgle Cycle Core.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/Electronics/Vivado/RISC-V Sincgle Cycle Core/RISC-V Sincgle Cycle Core.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/Electronics/Vivado/RISC-V -notrace
+couldn't read file "E:/Electronics/Vivado/RISC-V": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Sun Mar  9 22:12:57 2025...

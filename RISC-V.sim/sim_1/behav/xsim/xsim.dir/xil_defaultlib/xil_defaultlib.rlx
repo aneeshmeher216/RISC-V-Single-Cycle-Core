@@ -1,0 +1,18 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sim_1/new/Single_Cycle_Processor_tb.v,1741539303,verilog,,,,Single_Cycle_Processor_tb,,,,,,,,
+E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/ALU.v,1741546000,verilog,,E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/ALU_Decoder.v,,ALU,,,,,,,,
+E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/ALU_Decoder.v,1741535972,verilog,,E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Control_Unit_Top.v,,ALU_Decoder,,,,,,,,
+E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Control_Unit_Top.v,1741531164,verilog,,E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Data_Memory.v,,Control_Unit,,,,,,,,
+E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Data_Memory.v,1741542117,verilog,,E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Instruction_Memory.v,,data_mem,,,,,,,,
+E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Instruction_Memory.v,1741605374,verilog,,E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/PC_adder.v,,Instr_Mem,,,,,,,,
+E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/PC_adder.v,1741532309,verilog,,E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Program_Counter.v,,PC_adder,,,,,,,,
+E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Program_Counter.v,1741442054,verilog,,E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Register_File.v,,PC,,,,,,,,
+E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Register_File.v,1741605808,verilog,,E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Sign_Extend.v,,Register_File,,,,,,,,
+E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Sign_Extend.v,1741546281,verilog,,E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Single_Cycle_top.v,,Sign_Extend,,,,,,,,
+E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Single_Cycle_top.v,1741604910,verilog,,E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/main_decoder.v,,Single_Cycle_top,,,,,,,,
+E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/main_decoder.v,1741546207,verilog,,E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/mux_2X1.v,,Main_Decoder,,,,,,,,
+,,,,E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sim_1/new/Single_Cycle_Processor_tb.v,,mux_2X1,,,,,,,,

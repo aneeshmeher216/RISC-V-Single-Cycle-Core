@@ -1,0 +1,29 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 94b51463443241e7bc4d4d378104636c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Single_Cycle_Processor_tb_behav xil_defaultlib.Single_Cycle_Processor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 3 for port 'ALUControl' [E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Single_Cycle_top.v:56]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/ALU.v" Line 2. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Control_Unit_Top.v" Line 1. Module Control_Unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/ALU_Decoder.v" Line 3. Module ALU_Decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/Data_Memory.v" Line 3. Module data_mem doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.Instr_Mem
+Compiling module xil_defaultlib.Register_File
+Compiling module xil_defaultlib.mux_2X1
+Compiling module xil_defaultlib.Sign_Extend
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Main_Decoder
+Compiling module xil_defaultlib.ALU_Decoder
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.PC_adder
+Compiling module xil_defaultlib.Single_Cycle_top
+Compiling module xil_defaultlib.Single_Cycle_Processor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Single_Cycle_Processor_tb_behav
