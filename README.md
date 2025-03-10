@@ -1,2 +1,3 @@
 # RISC-V-Single-Cycle-Core
-![image.png](attachment:2b6764f4-d90a-4228-acee-6f917d6a5b21:image.png)
+
+![Processor](https://github.com/user-attachments/assets/29236283-612f-45ae-8042-68583b83bd2f)
