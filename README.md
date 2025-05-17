@@ -5,7 +5,7 @@
 The above design of RISC-V processor is based on the harvard architecture since it has different memory for storing instructions and data namely Instruction Memory and Data memory. 
 
 **How Single-Cycle Design Works Despite Multiple Clocked Components:**
-Even though multiple components are clocked, they all operate in parallel during the same clock cycle. Here's what that means:
+Even though multiple components are clocked, they all operate in parallel during the same clock cycle.
 
 What happens during a single clock pulse:
 * PC: Updates to the next instruction address at the rising edge of the clock.
