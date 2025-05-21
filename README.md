@@ -25,3 +25,5 @@ Start at rising edge → Propagate through every stage (fetch, decode, execute, 
 
 That’s why single-cycle designs are inefficient:
 You must set the clock period to the worst-case instruction.
+
+Whereas as we'll see in the pipelined design, the clock period will be of shorter period for each stage and it needs to be just long enough to accomodate a single stage of instruction at a time which makes its clock period much lesser than single cycle processor and thus maing it overall faster. 
