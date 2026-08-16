@@ -21,7 +21,7 @@ What happens during a single clock pulse:
 So, all logic propagates in parallel within the same clock cycle, and writes (PC, register file, memory) all happen on the same rising clock edge.
 
 The cycle time of a single-cycle processor must be long enough to:
-Start at rising edge → Propagate through every stage (fetch, decode, execute, memory, write-back) → Set up values for the next rising edge.
+Start at rising edge → Propagate through Critical path of longest latency instruction(lw instr) → Set up values for the next rising edge.
 
 That’s why single-cycle designs are inefficient:
 You must set the clock period to the worst-case instruction.
