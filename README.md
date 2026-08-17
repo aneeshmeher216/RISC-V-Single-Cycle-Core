@@ -2,19 +2,19 @@
 
 ![Processor](https://github.com/user-attachments/assets/29236283-612f-45ae-8042-68583b83bd2f)
 
-## Overview
+## 📖 Overview
 
 This project implements a 32-bit RISC-V Single-Cycle Processor in Verilog HDL.
 
 The processor follows a **Harvard Architecture**, where instruction memory and data memory are physically separated. This allows instruction fetch and data access to occur independently.
 
-### Supported Instruction Formats
+### 🧩 Supported Instruction Formats
 - R-Type
 - I-Type
 - S-Type
 - B-Type
 
-### Supported all instructions involving following operations
+### ⚙️ Supports all instructions involving following operations
 - ADD
 - SUB
 - SLT (Set Less Than)
@@ -26,7 +26,7 @@ The processor follows a **Harvard Architecture**, where instruction memory and d
 
 ---
 
-## Processor Architecture
+## 🏗️ Processor Architecture
 
 Major blocks present in the design:
 
@@ -41,7 +41,7 @@ Major blocks present in the design:
 - Branch Logic
 - Multiplexers
 
-## Why It Is Called Single-Cycle
+## ⏱️ Why It Is Called Single-Cycle
 
 Although multiple hardware blocks are present, every instruction completes within a single clock cycle.
 
@@ -110,7 +110,7 @@ MemWrite = 1
 
 ---
 
-## Critical Path
+## 🚨 Critical Path
 
 The clock period must be long enough to accommodate the slowest instruction.
 
@@ -141,9 +141,9 @@ This is the primary disadvantage of a single-cycle processor.
 ---
 
 
-## Comparison with Pipelined Processor
+## ⚡ Comparison with Pipelined Processor
 
-### Single-Cycle Processor
+### 🔹 Single-Cycle Processor
 
 ```text
 Instruction Latency = 1 cycle
@@ -151,7 +151,7 @@ CPI = 1
 Clock Period = Worst-case instruction delay
 ```
 
-### Pipelined Processor
+### 🔹 Pipelined Processor
 
 ```text
 Instruction Latency > 1 cycle
@@ -170,19 +170,19 @@ Better Hardware Utilization
 
 ---
 ## Example Execution
-### Instructions Given
+### 📋 Instructions Given
 <img width="607" height="214" alt="image" src="https://github.com/user-attachments/assets/3643455d-63dc-42f5-8491-81fcf9d81f39" />
 
-### Contents of Register File
+### 🗂️ Contents of Register File
 <img width="444" height="358" alt="image" src="https://github.com/user-attachments/assets/2e2194c4-24a7-4639-808d-c4339d89f376" />
 
-### Contents of Data Memory
+### 💾 Contents of Data Memory
 <img width="573" height="209" alt="image" src="https://github.com/user-attachments/assets/3b835ff7-a2f7-4771-a16d-a4b8d89751b2" />
 
-### Outputs Obtained after executing all instruction
+### ✅ Outputs Obtained after executing all instruction
 <img width="274" height="151" alt="image" src="https://github.com/user-attachments/assets/8d67f30f-64c6-4498-bbb2-82a127ee39d9" />
 
-### Simulation Waveform
+### 📈 Simulation Waveform
 <img width="1661" height="660" alt="image" src="https://github.com/user-attachments/assets/d2c720e9-2a98-41de-9d15-a6b569aaf4ce" />
 <img width="1626" height="470" alt="image" src="https://github.com/user-attachments/assets/424ffc9e-ce9b-4c2a-b000-561e305296d6" />
 <img width="1597" height="500" alt="image" src="https://github.com/user-attachments/assets/e6ff87e6-c271-4d94-81b9-041de2601fb1" />
@@ -287,11 +287,11 @@ Operation:
 x23 = x7 | x28
 ```
 ---
-## Performance Results
+## 📊 Performance Results
 * Latency : Latency in terms of time depends upon the set clock period but in terms of cycles each instruction takes 1 cycle to complete as the name of design suggests
 * CPI : 1
 * Throughput = (Clock Frequency/CPI) = 1/(Clock period X CPI) = 1/ (10ns * 1) = 100 *(10^6) instructions per second
   Throughput is therefore 100 MIPS or 100 Million instructions per second.
 
-## Reference 
+## 📚 Reference 
 Digital Design and Computer Architecture by David Harris & Sarah Harris
