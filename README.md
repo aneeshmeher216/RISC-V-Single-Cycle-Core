@@ -128,14 +128,15 @@ PC
 
 which corresponds to a **Load Word (`lw`)** instruction.
 
-Therefore:
+<img width="781" height="481" alt="image" src="https://github.com/user-attachments/assets/35f05275-9563-471c-a26f-46122f17758e" />
+Hence, the cycle time of the single-cycle processor is:
+<img width="469" height="57" alt="image" src="https://github.com/user-attachments/assets/fd33a617-f000-4435-8d0b-2c399d28a5ef" />
 
-```text
-Clock Period ≥ Critical Path Delay
-```
+In most implementation technologies, the ALU, memory, and register file are substantially slower than other combinational blocks. Therefore, the critical path is through the register file—not through the decoder (controller), Extend unit, and multiplexer—and is the path highlighted in blue. 
+
+<img width="458" height="41" alt="image" src="https://github.com/user-attachments/assets/da157214-d887-41a0-b177-0f1d60d54952" />
 
 All instructions are forced to use the same clock period even if they require significantly less logic.
-
 This is the primary disadvantage of a single-cycle processor.
 
 ---
