@@ -1,31 +1,28 @@
 #-----------------------------------------------------------
-# Vivado v2019.1 (64-bit)
-# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
-# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Mar 10 16:11:08 2025
-# Process ID: 11332
-# Current directory: E:/Electronics/Vivado/Single_Cycle_Core
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5532 E:\Electronics\Vivado\Single_Cycle_Core\RISC-V.xpr
-# Log file: E:/Electronics/Vivado/Single_Cycle_Core/vivado.log
-# Journal file: E:/Electronics/Vivado/Single_Cycle_Core\vivado.jou
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Aug 15 17:37:59 2026
+# Process ID         : 19360
+# Current directory  : E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent11448 E:\Electronics\Verilog Projects\RISC-V_Single_Cycle_Core\RISC-V.xpr
+# Log file           : E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/vivado.log
+# Journal file       : E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core\vivado.jou
+# Running On         : HP-VICTUS
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 7535HS with Radeon Graphics        
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16329 MB
+# Swap memory        : 17179 MB
+# Total Virtual      : 33509 MB
+# Available Virtual  : 20028 MB
 #-----------------------------------------------------------
 start_gui
-open_project E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.xpr
+open_project {E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.xpr}
+upgrade_project -migrate_output_products
+update_compile_order -fileset sim_1
 update_compile_order -fileset sources_1
-launch_simulation
-source Single_Cycle_Processor_tb.tcl
-export_ip_user_files -of_objects  [get_files {{E:/Electronics/Vivado/RISC-V Sincgle Cycle Core/Single_Cycle_Processor_tb_behav.wcfg}}] -no_script -reset -force -quiet
-remove_files  -fileset sim_1 {{E:/Electronics/Vivado/RISC-V Sincgle Cycle Core/Single_Cycle_Processor_tb_behav.wcfg}}
-relaunch_sim
-save_wave_config {E:/Electronics/Vivado/Single_Cycle_Core/Single_Cycle_Processor_tb_behav.wcfg}
-add_files -fileset sim_1 -norecurse E:/Electronics/Vivado/Single_Cycle_Core/Single_Cycle_Processor_tb_behav.wcfg
-set_property xsim.view {{E:/Electronics/Vivado/RISC-V Sincgle Cycle Core/Single_Cycle_Processor_tb_behav.wcfg} E:/Electronics/Vivado/Single_Cycle_Core/Single_Cycle_Processor_tb_behav.wcfg} [get_filesets sim_1]
-close [ open E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/mux_2X1.v w ]
-add_files E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sources_1/new/mux_2X1.v
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-relaunch_sim
-relaunch_sim
-relaunch_sim
-save_wave_config {E:/Electronics/Vivado/Single_Cycle_Core/Single_Cycle_Processor_tb_behav.wcfg}
-close_sim

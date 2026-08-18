@@ -1,0 +1,85 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Mar 15 18:37:24 2025
+# Process ID: 4956
+# Current directory: E:/Electronics/Vivado/RISC-V_Single_Cycle_Core
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18596 E:\Electronics\Vivado\RISC-V_Single_Cycle_Core\RISC-V.xpr
+# Log file: E:/Electronics/Vivado/RISC-V_Single_Cycle_Core/vivado.log
+# Journal file: E:/Electronics/Vivado/RISC-V_Single_Cycle_Core\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Electronics/Vivado/RISC-V_Single_Cycle_Core/RISC-V.xpr
+update_compile_order -fileset sources_1
+save_project_as {RISC-V Pipelined Core} {E:/Electronics/Vivado/RISC-V Pipelined Core} -force
+import_files
+close [ open {E:/Electronics/Vivado/RISC-V Pipelined Core/RISC-V Pipelined Core.srcs/sources_1/new/Fetch_Cycle.v} w ]
+add_files {{E:/Electronics/Vivado/RISC-V Pipelined Core/RISC-V Pipelined Core.srcs/sources_1/new/Fetch_Cycle.v}}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {E:/Electronics/Vivado/RISC-V Pipelined Core/RISC-V Pipelined Core.srcs/sim_1/new/fetch_cycle_tb.v} w ]
+add_files -fileset sim_1 {{E:/Electronics/Vivado/RISC-V Pipelined Core/RISC-V Pipelined Core.srcs/sim_1/new/fetch_cycle_tb.v}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top fetch_cycle_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config {E:/Electronics/Vivado/RISC-V Pipelined Core/RISC-V Pipelined Core.srcs/sim_1/imports/RISC-V_Single_Cycle_Core/Single_Cycle_Processor_tb_behav.wcfg}
+source fetch_cycle_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+relaunch_sim
+run 50 ns
+run 50 ns
+relaunch_sim
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+close_sim

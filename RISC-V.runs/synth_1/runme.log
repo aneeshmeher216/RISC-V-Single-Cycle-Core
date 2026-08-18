@@ -1,0 +1,258 @@
+
+*** Running vivado
+    with args -log Single_Cycle_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Single_Cycle_top.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Aug 18 19:16:52 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Single_Cycle_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 532.062 ; gain = 222.078
+Command: synth_design -top Single_Cycle_top -part xc7a200tffg1156-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16008
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1073.883 ; gain = 537.836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Single_Cycle_top' [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Single_Cycle_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Program_Counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Program_Counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Instr_Mem' [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Instruction_Memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Instr_Mem' (0#1) [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Instruction_Memory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Register_File.v:3]
+INFO: [Synth 8-251] x18 = xxxxxxxx [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Register_File.v:37]
+INFO: [Synth 8-251] x19 = xxxxxxxx [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Register_File.v:38]
+INFO: [Synth 8-251] x20 = xxxxxxxx [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Register_File.v:39]
+INFO: [Synth 8-251] x21 = xxxxxxxx [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Register_File.v:40]
+INFO: [Synth 8-251] x23 = xxxxxxxx [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Register_File.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (0#1) [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Register_File.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux_2X1' [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/mux_2X1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2X1' (0#1) [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/mux_2X1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Sign_Extend' [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Sign_Extend.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Sign_Extend' (0#1) [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Sign_Extend.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/ALU.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/ALU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Control_Unit' [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Control_Unit_Top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Main_Decoder' [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/main_decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Main_Decoder' (0#1) [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/main_decoder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Decoder' [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/ALU_Decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Decoder' (0#1) [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/ALU_Decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Control_Unit' (0#1) [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Control_Unit_Top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Data_Memory.v:3]
+INFO: [Synth 8-251] mem[25]= xxxxxxxx [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Data_Memory.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (0#1) [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Data_Memory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC_adder' [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/PC_adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC_adder' (0#1) [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/PC_adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Single_Cycle_top' (0#1) [E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sources_1/new/Single_Cycle_top.v:1]
+WARNING: [Synth 8-7129] Port A[31] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[30] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[29] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[28] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[27] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[26] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[25] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[24] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[23] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[22] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[21] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[20] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[19] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[18] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[17] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[16] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[15] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[14] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[13] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[12] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[11] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[19] in module Sign_Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[18] in module Sign_Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[17] in module Sign_Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[16] in module Sign_Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[15] in module Sign_Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[14] in module Sign_Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[13] in module Sign_Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[12] in module Sign_Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[6] in module Sign_Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[5] in module Sign_Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[4] in module Sign_Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[3] in module Sign_Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[2] in module Sign_Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[1] in module Sign_Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[0] in module Sign_Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module Instr_Mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module Instr_Mem is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1193.332 ; gain = 657.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1193.332 ; gain = 657.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tffg1156-2
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tffg1156-2
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1193.332 ; gain = 657.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1193.332 ; gain = 657.285
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 2     
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   7 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 8     
+	   4 Input   32 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:47 . Memory (MB): peak = 1401.320 ; gain = 865.273
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:47 . Memory (MB): peak = 1417.125 ; gain = 881.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:47 . Memory (MB): peak = 1417.125 ; gain = 881.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:56 . Memory (MB): peak = 1655.816 ; gain = 1119.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:56 . Memory (MB): peak = 1655.816 ; gain = 1119.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:56 . Memory (MB): peak = 1655.816 ; gain = 1119.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:56 . Memory (MB): peak = 1655.816 ; gain = 1119.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:56 . Memory (MB): peak = 1655.816 ; gain = 1119.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:56 . Memory (MB): peak = 1655.816 ; gain = 1119.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:56 . Memory (MB): peak = 1655.816 ; gain = 1119.770
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 39 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:56 . Memory (MB): peak = 1655.816 ; gain = 1119.770
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:56 . Memory (MB): peak = 1655.816 ; gain = 1119.770
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1656.840 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1788.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d237c006
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:01:03 . Memory (MB): peak = 1788.574 ; gain = 1256.512
+INFO: [Common 17-1381] The checkpoint 'E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.runs/synth_1/Single_Cycle_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Single_Cycle_top_utilization_synth.rpt -pb Single_Cycle_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 18 19:18:12 2026...

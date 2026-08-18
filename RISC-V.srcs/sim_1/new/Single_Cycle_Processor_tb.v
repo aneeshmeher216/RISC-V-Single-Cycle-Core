@@ -6,14 +6,10 @@ module Single_Cycle_Processor_tb();
     
     initial begin
                 rst = 1'b0; clk = 0;
-        #100    rst = 1'b1;
-        #300    $finish;
+        #10      rst = 1'b1;
+        #200    $finish;
     end
     
-    always begin
-        #50 clk = ~clk;
-    end
-
-
+    always #5 clk = ~clk;
 
 endmodule

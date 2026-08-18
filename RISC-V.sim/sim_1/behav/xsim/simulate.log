@@ -1,3 +1,8 @@
-Vivado Simulator 2019.1
 Time resolution is 1 ps
-$finish called at time : 400 ns : File "E:/Electronics/Vivado/Single_Cycle_Core/RISC-V.srcs/sim_1/new/Single_Cycle_Processor_tb.v" Line 10
+x18 = fafafafa
+x19 = 00000009
+x20 = 00000003
+x21 = 00000002
+x23 = ffffffff
+mem[25]= f1e2d3c4
+$finish called at time : 210 ns : File "E:/Electronics/Verilog Projects/RISC-V_Single_Cycle_Core/RISC-V.srcs/sim_1/new/Single_Cycle_Processor_tb.v" Line 10

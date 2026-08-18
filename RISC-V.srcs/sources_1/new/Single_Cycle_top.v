@@ -5,12 +5,14 @@ module Single_Cycle_top(
 wire [31:0] PC_top, PC_plus4, RD_instr, RD1,RD2, 
             Imm_Extend, ALU_result, ReadData, SrcB, Result;
             
-wire [1:0] ALUControl_top, ImmSrc;
+wire [1:0] ImmSrc;
+wire [2:0] ALUControl_top;
 wire reg_write, MemWrite, ALUSrc, ResultSrc;
+wire [31:0] PC_Next;
 
 PC PC_module(.clk(clk),
             .rst(rst),
-            .PC_Next(PC_plus4),
+            .PC_Next(PC_Next),
             .PC(PC_top));
             
 Instr_Mem inst_mem_module(  .A(PC_top),
@@ -30,24 +32,25 @@ Register_File reg_file( .clk(clk),
 mux_2X1 mux_regFile_to_ALU(.a(RD2),.b(Imm_Extend),.s(ALUSrc),.c(SrcB));
 
 Sign_Extend imm_extend_module(.Instr(RD_instr),
-                              .ImmSrc(ImmSrc[0]),
+                              .ImmSrc(ImmSrc),
                               .Imm_Ext(Imm_Extend));
                                 
-
+wire zero;
 ALU ALU_module( .A(RD1),
                 .B(SrcB),
                 .AluControl(ALUControl_top),
                 .result(ALU_result),
                 .C(),
-                .Z(),
+                .Z(zero),
                 .N(),
                 .V());
+wire PCSrc;
                 
 Control_Unit Control_Unit_Top(  .opcode(RD_instr[6:0]),
-                                .funct7(),
+                                .funct7_5(RD_instr[30]),
                                 .funct3(RD_instr[14:12]),
-                                .zero(),
-                                .PCsrc(),
+                                .zero(zero),
+                                .PCsrc(PCSrc),
                                 .RegWrite(reg_write),
                                 .ALUSrc(ALUSrc),
                                 .MemWrite(MemWrite),
@@ -65,5 +68,10 @@ data_mem Data_Memory(.clk(clk),
                      .RD(ReadData));  
                      
 PC_adder pc_incrementer(.a(PC_top),.b(32'd4),.c(PC_plus4)); 
-      
+
+wire [31:0] PC_next1;
+
+PC_adder PCTarget(.a(PC_top),.b(Imm_Extend),.c(PC_next1));
+
+mux_2X1 PC_nextmux(.a(PC_plus4),.b(PC_next1),.s(PCSrc),.c(PC_Next));      
 endmodule
