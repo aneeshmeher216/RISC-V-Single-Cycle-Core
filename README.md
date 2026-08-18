@@ -289,7 +289,7 @@ x23 = x7 | x28
 ---
 ## 📊 Performance Results
 * Latency : Latency in terms of time depends upon the set clock period but in terms of cycles each instruction takes 1 cycle to complete as the name of design suggests
-* CPI : 1
+* CPI : 1 (6 Clock Cycles for 6 instructions)
 * Throughput = (Clock Frequency/CPI) = 1/(Clock period X CPI) = 1/ (10ns * 1) = 100 *(10^6) instructions per second
   Throughput is therefore 100 MIPS or 100 Million instructions per second.
 
